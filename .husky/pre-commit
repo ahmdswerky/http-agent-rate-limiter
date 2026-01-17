@@ -1,8 +1,1 @@
-#!/bin/sh
-
-. "$(dirname "$0")/_/husky.sh"
-
-echo "Running Pint..."
-./vendor/bin/pint --parallel --max-processes=4 --test
-
-./vendor/bin/sail artisan test
+npx lint-staged
